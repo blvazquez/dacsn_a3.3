@@ -30,10 +30,10 @@ services:
       FORGEJO__cache__HOST: redis://:${REDIS_CONTRASENA}@cache:6379/0
 
       FORGEJO__session__PROVIDER: redis
-      FORGEJO__session__PROVIDER_CONFIG: redis://:${REDIS_CONTRASENA}@cache:6379/1
+      FORGEJO__session__PROVIDER_CONFIG: redis://:${REDIS_CONTRASENA}@cache:6379/0
 
       FORGEJO__queue__TYPE: redis
-      FORGEJO__queue__CONN_STR: redis://:${REDIS_CONTRASENA}@cache:6379/2
+      FORGEJO__queue__CONN_STR: redis://:${REDIS_CONTRASENA}@cache:6379/0
 
     ports:
       - "${PUERTO}:3000"
