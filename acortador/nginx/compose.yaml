@@ -1,0 +1,13 @@
+services:
+  web:
+    image: nginx:1.30
+  yourls:
+    image: yourls:1.10.2-fpm
+  bd:
+    image: mariadb:11.8
+
+volumes:
+
+networks:
+  interna:
+  frontal:
